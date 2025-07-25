@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hema Dharshini | Skills</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(to right, #ecf4ff, #f8fbff);
+      color: #1e293b;
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      width: 230px;
+      background-color: #26314e;
+      display: flex;
+      flex-direction: column;
+      padding: 2rem 1rem;
+      gap: 1rem;
+    }
+
+    nav a {
+      color: #e0ecff;
+      text-decoration: none;
+      font-weight: 600;
+      padding: 0.7rem 1rem;
+      border-radius: 8px;
+      transition: background 0.3s;
+    }
+
+    nav a:hover,
+    nav a.active {
+      background-color: #26314e;
+      color: #fff;
+    }
+
+    header {
+      margin-left: 250px;
+      padding: 3rem 2rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      color: #26314e;
+    }
+
+    main {
+      margin-left: 250px;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 2.5rem;
+      background: url('https://www.transparenttextures.com/patterns/geometry2.png');
+    }
+
+    .skill-card {
+      background: #ffffffee;
+      padding: 2rem;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+      backdrop-filter: blur(5px);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .skill-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+    }
+
+    .skill-icon {
+      width: 60px;
+      margin-bottom: 1rem;
+    }
+
+    .skill-title {
+      font-size: 1.6rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      color: #26314e;
+    }
+
+    ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      margin-bottom: 1rem;
+    }
+
+    ul li {
+      background-color: #dbeafe;
+      color: #1e3a8a;
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      font-weight: 500;
+      font-size: 0.95rem;
+    }
+
+    .description {
+      font-size: 0.95rem;
+      color: #475569;
+      line-height: 1.5;
+    }
+
+    footer {
+      margin-left: 250px;
+      padding: 1rem 2rem;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #64748b;
+      background-color: #f1f5f9;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        position: relative;
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        justify-content: space-around;
+      }
+
+      main, header, footer {
+        margin-left: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html">About</a>
+    <a href="education.html">Education</a>
+    <a href="skills.html" class="active">Skills</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <header>
+    <h1>My Technical & Soft Skills</h1>
+  </header>
+
+  <main>
+    <div class="skill-card">
+      <img class="skill-icon" src="https://img.icons8.com/external-flat-icons-inmotus-design/67/external-Coding-web-development-flat-icons-inmotus-design.png" alt="Programming Icon" />
+      <div class="skill-title">Programming</div>
+      <ul>
+        <li>C</li>
+        <li>C++</li>
+        <li>Java</li>
+        <li>Python</li>
+        <li>HTML & CSS</li>
+        <li>SQL</li>
+      </ul>
+      <p class="description">
+        I have hands-on experience with multiple programming languages across academic and project work.
+        I am confident in writing efficient code, debugging, and building applications ranging from basic logic to web development.
+      </p>
+    </div>
+
+    <div class="skill-card">
+      <img class="skill-icon" src="https://img.icons8.com/fluency/96/developer.png" alt="Tools Icon" />
+      <div class="skill-title">Tools</div>
+      <ul>
+        <li>VS Code</li>
+        <li>IntelliJ</li>
+        <li>MATLAB</li>
+        <li>Blender</li>
+      </ul>
+      <p class="description">
+        I've worked with various development and design tools that aid productivity and creativity. 
+        These include coding environments, modeling software, and simulation platforms for technical experiments.
+      </p>
+    </div>
+
+    <div class="skill-card">
+      <img class="skill-icon" src="https://img.icons8.com/fluency/96/leadership.png" alt="Soft Skills Icon" />
+      <div class="skill-title">Soft Skills</div>
+      <ul>
+        <li>Problem Solving</li>
+        <li>Teamwork</li>
+        <li>Communication</li>
+        <li>Creativity</li>
+        <li>Quick Learner</li>
+      </ul>
+      <p class="description">
+        Alongside technical knowledge, I value soft skills that help in collaboration and adaptability. 
+        I actively contribute in teams, communicate ideas clearly, and enjoy learning new concepts rapidly.
+      </p>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Hema Dharshini. All Rights Reserved.
+  </footer>
+
+</body>
+</html>

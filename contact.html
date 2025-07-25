@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hema Dharshini | Contact</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(to right, #e0f2fe, #f8fafc);
+      color: #1e293b;
+      display: flex;
+      min-height: 100vh;
+    }
+
+    nav {
+      background-color: #1e3a8a;
+      width: 230px;
+      padding: 2rem 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+      position: fixed;
+      height: 100vh;
+    }
+
+    nav a {
+      color: #dbeafe;
+      text-decoration: none;
+      font-weight: 600;
+      padding: 0.7rem 1rem;
+      border-radius: 8px;
+      font-size: 1.05rem;
+      transition: background-color 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: #3c557d;
+      color: #fff;
+    }
+
+    nav a.active {
+      background-color: #3c557d;
+      color: #fff;
+      box-shadow: 0 0 10px #3c557d;
+    }
+
+    main {
+      margin-left: 250px;
+      padding: 3rem 2rem;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .contact-container {
+      background: rgba(255, 255, 255, 0.8);
+      padding: 3rem;
+      border-radius: 16px;
+      max-width: 800px;
+      width: 100%;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+      backdrop-filter: blur(8px);
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      font-weight: 700;
+      color: #3c557d;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+    .contact-section {
+      margin-bottom: 2.5rem;
+    }
+
+    .section-title {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: #1e3a8a;
+      margin-bottom: 1.2rem;
+      border-bottom: 3px solid #3c557d;
+      padding-bottom: 0.3rem;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1.2rem;
+      font-size: 1.1rem;
+      color: #334155;
+    }
+
+    .contact-item img {
+      width: 28px;
+      margin-right: 0.8rem;
+    }
+
+    .contact-item a {
+      color: #3c557d;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .contact-item a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      margin-left: 250px;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #64748b;
+    }
+
+    @media (max-width: 768px) {
+      body {
+        flex-direction: column;
+      }
+
+      nav {
+        position: relative;
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        justify-content: center;
+        gap: 0.6rem;
+        padding: 1rem;
+      }
+
+      main {
+        margin-left: 0;
+        padding: 2rem 1rem;
+      }
+
+      footer {
+        margin-left: 0;
+        padding: 1rem 0;
+      }
+
+      .contact-container {
+        padding: 2rem;
+        border-radius: 0;
+        box-shadow: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html">About</a>
+    <a href="education.html">Education</a>
+    <a href="skills.html">Skills</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html" class="active">Contact</a>
+  </nav>
+
+  <main>
+    <div class="contact-container">
+      <header>
+        <h1>Contact Me</h1>
+      </header>
+
+      <section class="contact-section">
+        <h2 class="section-title">Get in Touch</h2>
+
+        <div class="contact-item">
+          <img src="https://img.icons8.com/ios-filled/50/3b82f6/phone.png" alt="Phone Icon">
+          <span><strong>Phone:</strong> +91 82486 36586</span>
+        </div>
+
+        <div class="contact-item">
+          <img src="https://img.icons8.com/ios-filled/50/3b82f6/new-post.png" alt="Email Icon">
+          <span><strong>Email:</strong> 
+            <a href="mailto:hemadharshini177@gmail.com">hemadharshini177@gmail.com</a>
+          </span>
+        </div>
+
+        <div class="contact-item">
+          <img src="https://img.icons8.com/ios-filled/50/3b82f6/marker.png" alt="Location Icon">
+          <span><strong>Location:</strong> Semmamadam, Rameswaram, Tamil Nadu</span>
+        </div>
+      </section>
+
+      <section class="contact-section">
+        <h2 class="section-title">Social</h2>
+        <div class="contact-item">
+          <img src="https://img.icons8.com/ios-filled/50/3b82f6/linkedin.png" alt="LinkedIn Icon">
+          <span>
+            <a href="https://www.linkedin.com/in/hema-dharshini-s-28ab7731a" target="_blank" rel="noopener noreferrer">
+              LinkedIn Profile
+            </a>
+          </span>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Hema Dharshini | Portfolio
+  </footer>
+</body>
+</html>

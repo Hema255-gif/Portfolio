@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hema Dharshini | Education</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: #f5f7fa;
+      color: #1e293b;
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 220px;
+      height: 100vh;
+      background: #334269;
+      padding: 2rem 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+    }
+
+    nav a {
+      color: #e0f2fe;
+      text-decoration: none;
+      padding: 0.75rem 1rem;
+      border-radius: 10px;
+      transition: background 0.3s;
+      font-weight: 600;
+    }
+
+    nav a:hover,
+    nav a.active {
+      background: #334269;
+      color: #fff;
+    }
+
+    main {
+      margin-left: 240px;
+      padding: 2.5rem;
+      max-width: 900px;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+      color: #0f172a;
+      text-align: center;
+    }
+
+    .timeline {
+      position: relative;
+      margin: 2rem 0;
+      padding-left: 2rem;
+      border-left: 4px solid #334269;
+    }
+
+    .timeline-entry {
+      position: relative;
+      margin-bottom: 2.5rem;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      overflow: hidden;
+      display: flex;
+      gap: 1.5rem;
+      transition: transform 0.3s ease;
+    }
+
+    .timeline-entry:hover {
+      transform: translateY(-5px);
+    }
+
+    .timeline-entry::before {
+      content: '';
+      position: absolute;
+      left: -14px;
+      top: 20px;
+      width: 20px;
+      height: 20px;
+      background: #334269;
+      border-radius: 50%;
+      border: 3px solid #fff;
+      box-shadow: 0 0 0 3px #334269;
+    }
+
+    .timeline-image {
+      width: 150px;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .timeline-content {
+      padding: 1.2rem 1.2rem;
+      flex: 1;
+    }
+
+    .timeline-content h2 {
+      font-size: 1.3rem;
+      margin-bottom: 0.3rem;
+      color: #334269;
+    }
+
+    .timeline-content p {
+      margin: 0.25rem 0;
+      font-size: 0.95rem;
+      color: #475569;
+    }
+
+    footer {
+      margin-left: 240px;
+      padding: 1.5rem;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #94a3b8;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        position: static;
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        justify-content: space-around;
+      }
+
+      main, footer {
+        margin-left: 0;
+        padding: 1.5rem;
+      }
+
+      .timeline-entry {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .timeline-image {
+        width: 100%;
+        height: 160px;
+      }
+
+      .timeline::before {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html">About</a>
+    <a href="education.html" class="active">Education</a>
+    <a href="skills.html">Skills</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <main>
+    <h1>Education</h1>
+    <div class="timeline">
+      <div class="timeline-entry">
+        
+        <img src="https://images.unsplash.com/photo-1571260899304-425eee4c7efc?auto=format&fit=crop&w=400&q=80" class="timeline-image" alt="Higher Secondary Image" />
+        <div class="timeline-content">
+          <h2>B.E. Electronics and Communication Engineering</h2>
+          <p><strong>Velammal College of Engineering and Technology</strong></p>
+          <p>2022 – 2026 (6th Semester)</p>
+          <p>CGPA: 9.18</p>
+        </div>
+      </div>
+
+      <div class="timeline-entry">
+       <img src="https://images.unsplash.com/photo-1588072432836-e10032774350?auto=format&fit=crop&w=400&q=80" class="timeline-image" alt="College Image" />
+        <div class="timeline-content">
+          <h2>Higher Secondary</h2>
+          <p><strong>King of Kings Matriculation Hr. Sec. School</strong></p>
+          <p>Percentage: 91%</p>
+        </div>
+      </div>
+
+      <div class="timeline-entry">
+        <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w=400&q=80" class="timeline-image" alt="School Image" />
+        <div class="timeline-content">
+          <h2>Secondary School</h2>
+          <p><strong>King of Kings Matriculation Hr. Sec. School</strong></p>
+          <p>Percentage: 94%</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Hema Dharshini | Portfolio
+  </footer>
+</body>
+</html>

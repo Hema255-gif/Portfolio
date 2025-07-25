@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hema Dharshini | Projects</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #e0f2fe, #fef9ff);
+      display: flex;
+      min-height: 100vh;
+      color: #333;
+    }
+
+    nav {
+      width: 220px;
+      background: linear-gradient(to bottom right, #1d4ed8, #334a67);
+      padding: 2rem 1rem;
+      position: fixed;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      box-shadow: 2px 0 8px rgba(0, 0, 0, 0.15);
+    }
+
+    nav a {
+      color: #f0f9ff;
+      text-decoration: none;
+      padding: 0.75rem 1rem;
+      border-radius: 10px;
+      font-weight: bold;
+      transition: 0.3s ease;
+      font-size: 1rem;
+      background: rgba(255, 255, 255, 0.05);
+    }
+
+    nav a:hover {
+      background-color: rgba(255, 255, 255, 0.15);
+    }
+
+    nav a.active {
+      background-color: #facc15;
+      color: #334a67;
+    }
+
+    main {
+      margin-left: 240px;
+      padding: 3rem 2rem;
+      flex: 1;
+    }
+
+    header h1 {
+      text-align: center;
+      font-size: 2.8rem;
+      margin-bottom: 2.5rem;
+      color: #334a67;
+    }
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+
+    .project-card {
+      background: rgba(255, 255, 255, 0.65);
+      backdrop-filter: blur(12px);
+      border-radius: 20px;
+      padding: 1.5rem;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-6px);
+    }
+
+    .project-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 15px;
+      margin-bottom: 1rem;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    }
+
+    .project-card h2 {
+      font-size: 1.3rem;
+      color: #334a67;
+      margin-bottom: 0.5rem;
+    }
+
+    .project-card p {
+      font-size: 1rem;
+      color: #475569;
+      line-height: 1.5;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 4rem;
+      font-size: 0.9rem;
+      color: #64748b;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        position: relative;
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        justify-content: space-around;
+      }
+
+      main {
+        margin-left: 0;
+        padding: 2rem 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html">About</a>
+    <a href="education.html">Education</a>
+    <a href="skills.html">Skills</a>
+    <a href="projects.html" class="active">Projects</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <main>
+    <header>
+      <h1>My Projects</h1>
+    </header>
+
+    <div class="project-grid">
+
+      <div class="project-card">
+        <img src="https://images.unsplash.com/photo-1581093588401-60b8f01699e5?auto=format&fit=crop&w=1200&q=80" alt="Ovarian Cancer">
+        <h2>1. Ovarian Cancer Histopathology</h2>
+        <p>
+          Used attention-based feature fusion with transformers to analyze cancer tissue images and improve diagnostic accuracy.
+        </p>
+      </div>
+
+      <div class="project-card">
+        <img src="https://images.unsplash.com/photo-1628253747715-3c4e4d5d7402?auto=format&fit=crop&w=1200&q=80" alt="IOP Monitor">
+        <h2>2. Non-Contact IOP Monitor</h2>
+        <p>
+          Created a glaucoma device measuring tear pressure, submitted to SIH 2024. Combines tech with real-world health innovation.
+        </p>
+      </div>
+
+      <div class="project-card">
+        <img src="https://images.unsplash.com/photo-1596495578067-9c9d41f8be53?auto=format&fit=crop&w=1200&q=80" alt="LearnLynx">
+        <h2>3. LearnLynx Education Website</h2>
+        <p>
+          Developed a dynamic learning platform for personalized education. Clean UI, mobile responsive, student-focused design.
+        </p>
+      </div>
+
+      <div class="project-card">
+        <img src="https://images.unsplash.com/photo-1581090700227-2d5f0c1192e2?auto=format&fit=crop&w=1200&q=80" alt="Soil Nutrient">
+        <h2>4. Automated Soil Nutrient Tester</h2>
+        <p>
+          Built using Arduino sensors to help farmers analyze soil nutrition for smarter crop decisions and fertilizer use.
+        </p>
+      </div>
+
+    </div>
+
+    <footer>
+      &copy; 2025 Hema Dharshini | Portfolio
+    </footer>
+  </main>
+</body>
+</html>
